@@ -1,0 +1,71 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(177, 163, 163);
+}
+
+.moving{
+  width: 50%;
+  height: 90px;
+
+  border-bottom-right-radius: 43px;
+  border-top-right-radius: 43px;
+  border-bottom-left-radius: 43px;
+  border-top-left-radius: 43px;
+
+  background-color: rgb(101, 98, 109);
+  position: relative;
+
+  .ball{
+    width:90px;
+    height:90px;
+    background-color: black;
+    border-radius: 50%;
+    transition: 3s ease-in-out;
+    position: absolute;
+    left: 0%;
+  }
+  .btns{
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+    
+    .slowbtn{
+      padding: 10px 30px;
+      border-radius: 6px;
+      border: none;
+      font-size: 19px;
+      background-color: aliceblue;
+      line-height: normal;
+      cursor: pointer;
+      
+
+      &:hover{
+        background-color: black;
+        color: aliceblue;
+        transition: 0.5s;
+      }
+    }
+    .fastbtn{
+      padding: 10px 30px;
+      border-radius: 6px;
+      border: none;
+      font-size: 19px;
+      background-color: aliceblue;
+      line-height: normal;
+      cursor: pointer;
+
+      &:hover{
+        background-color: black;
+        color: aliceblue;
+        transition: 0.5s;
+      }
+    }
+  }
+}
